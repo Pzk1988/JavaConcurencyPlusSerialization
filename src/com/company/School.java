@@ -1,7 +1,9 @@
 package com.company;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
+@XmlRootElement
 public class School {
     public School(){}
     public School(String name, Address address){

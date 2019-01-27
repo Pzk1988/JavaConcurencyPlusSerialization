@@ -1,8 +1,9 @@
 package com.company;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "employee")
 public class Student {
     public Student(){}
     public Student(String name, String surname, int age){
@@ -19,6 +20,7 @@ public class Student {
         return name;
     }
 
+    @XmlAttribute
     public void setName(String name) {
         this.name = name;
     }
@@ -27,14 +29,16 @@ public class Student {
         return surname;
     }
 
+    @XmlAttribute
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
+    
     public int getAge() {
         return age;
     }
 
+    @XmlElement(required = true)
     public void setAge(int age) {
         this.age = age;
     }

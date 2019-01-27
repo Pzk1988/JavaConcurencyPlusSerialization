@@ -1,19 +1,21 @@
 package com.company;
 
-import java.beans.XMLEncoder;
-import java.io.FileOutputStream;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import java.io.File;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.concurrent.*;
 
 public class Main {
 
     public static void main(String[] args) {
         String[] pathList = new String[]{
-                "E:\\Intellij-workspace\\JavaConcurencyPlusSerialization\\Resources\\File1.txt",
-                "E:\\Intellij-workspace\\JavaConcurencyPlusSerialization\\Resources\\File2.txt",
-                "E:\\Intellij-workspace\\JavaConcurencyPlusSerialization\\Resources\\File3.txt",
-                "E:\\Intellij-workspace\\JavaConcurencyPlusSerialization\\Resources\\File4.txt"};
+                "C:\\Users\\PKnapik\\Documents\\Intellij_workspace\\JavaConcurencyPlusSerialization\\Resources\\File1.txt",
+                "C:\\Users\\PKnapik\\Documents\\Intellij_workspace\\JavaConcurencyPlusSerialization\\Resources\\File2.txt",
+                "C:\\Users\\PKnapik\\Documents\\Intellij_workspace\\JavaConcurencyPlusSerialization\\Resources\\File3.txt",
+                "C:\\Users\\PKnapik\\Documents\\Intellij_workspace\\JavaConcurencyPlusSerialization\\Resources\\File4.txt"};
 
         ThreadMethod(pathList);
 
@@ -21,7 +23,8 @@ public class Main {
 
         ThreadWithCoupling(pathList);
 
-        SerializationDeserialization();
+        //SerializationDeserialization();
+        Deserialization();
     }
 
     static void ThreadMethod(String[] pathList)
@@ -138,12 +141,30 @@ public class Main {
 
         System.out.println(school.toString());
 
-        try (FileOutputStream fos = new FileOutputStream("School.xml")) {
-            XMLEncoder encoder = new XMLEncoder(fos);
-            encoder.writeObject(school);
-            encoder.close();
-        }catch(Exception e){
+        try{
+            File file = new File("file.xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(School.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+
+            // output pretty printed
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            jaxbMarshaller.marshal(school, file);
+        } catch (JAXBException e) {
+                e.printStackTrace();
+            }
+        }
+
+     static void Deserialization(){
+        try {
+            File file = new File("file.xml");
+            JAXBContext jaxb = JAXBContext.newInstance(School.class);
+            Unmarshaller jaxbUnmar = jaxb.createUnmarshaller();
+            School school = (School) jaxbUnmar.unmarshal(file);
+
+            System.out.println(school);
+        }catch (Exception e){
             System.out.println(e.toString());
         }
-    }
+     }
 }

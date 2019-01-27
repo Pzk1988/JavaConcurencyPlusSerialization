@@ -12,7 +12,6 @@ public class Address {
         this.homeNumber = homeNumber;
     }
 
-    @XmlElement
     public String getStreet() {
         return street;
     }
@@ -21,7 +20,6 @@ public class Address {
         this.street = street;
     }
 
-    @XmlElement
     public int getZipCode() {
         return zipCode;
     }
@@ -30,7 +28,6 @@ public class Address {
         this.zipCode = zipCode;
     }
 
-    @XmlElement
     public int getHomeNumber() {
         return homeNumber;
     }

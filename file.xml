@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<school>
+    <address>
+        <homeNumber>23</homeNumber>
+        <street>Karola Miarki</street>
+        <zipCode>43190</zipCode>
+    </address>
+    <name>Liceum im. Karola Miarki</name>
+    <studentsList name="Eda" surname="Maratonczyk">
+        <age>20</age>
+    </studentsList>
+    <studentsList name="Eda1" surname="Maratonczyk1">
+        <age>20</age>
+    </studentsList>
+    <studentsList name="Eda2" surname="Maratonczyk2">
+        <age>22</age>
+    </studentsList>
+    <studentsList name="Eda3" surname="Maratonczyk3">
+        <age>22</age>
+    </studentsList>
+    <studentsList name="Eda4" surname="Maratonczyk4">
+        <age>21</age>
+    </studentsList>
+    <studentsList name="Eda4" surname="Maratonczyk4">
+        <age>21</age>
+    </studentsList>
+    <studentsList name="Eda433" surname="Maratonczyk4">
+        <age>21</age>
+    </studentsList>
+</school>
