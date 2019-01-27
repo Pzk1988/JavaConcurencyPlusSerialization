@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_151" class="java.beans.XMLDecoder">
+ <object class="com.company.School">
+  <void property="address">
+   <object class="com.company.Address">
+    <void property="homeNumber">
+     <int>23</int>
+    </void>
+    <void property="street">
+     <string>Karola Miarki</string>
+    </void>
+    <void property="zipCode">
+     <int>43190</int>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Liceum im. Karola Miarki</string>
+  </void>
+  <void property="studentsList">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.company.Student">
+      <void property="age">
+       <int>20</int>
+      </void>
+      <void property="name">
+       <string>Eda</string>
+      </void>
+      <void property="surname">
+       <string>Maratonczyk</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.company.Student">
+      <void property="age">
+       <int>20</int>
+      </void>
+      <void property="name">
+       <string>Eda1</string>
+      </void>
+      <void property="surname">
+       <string>Maratonczyk1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.company.Student">
+      <void property="age">
+       <int>22</int>
+      </void>
+      <void property="name">
+       <string>Eda2</string>
+      </void>
+      <void property="surname">
+       <string>Maratonczyk2</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.company.Student">
+      <void property="age">
+       <int>22</int>
+      </void>
+      <void property="name">
+       <string>Eda3</string>
+      </void>
+      <void property="surname">
+       <string>Maratonczyk3</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.company.Student">
+      <void property="age">
+       <int>21</int>
+      </void>
+      <void property="name">
+       <string>Eda4</string>
+      </void>
+      <void property="surname">
+       <string>Maratonczyk4</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

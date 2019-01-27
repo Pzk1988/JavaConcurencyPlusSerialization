@@ -1,5 +1,7 @@
 package com.company;
 
+import java.beans.XMLEncoder;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.*;
@@ -18,6 +20,8 @@ public class Main {
         ThreadPool(pathList);
 
         ThreadWithCoupling(pathList);
+
+        SerializationDeserialization();
     }
 
     static void ThreadMethod(String[] pathList)
@@ -123,4 +127,23 @@ public class Main {
         System.out.println("ThreadPoolCoupled lines: " + res + ", time: " + (System.currentTimeMillis() - startLime));
     }
 
+    static void SerializationDeserialization(){
+        Address address = new Address("Karola Miarki", 43190, 23);
+        School school = new School("Liceum im. Karola Miarki", address);
+        school.AddStudent(new Student("Eda", "Maratonczyk", 20));
+        school.AddStudent(new Student("Eda1", "Maratonczyk1", 20));
+        school.AddStudent(new Student("Eda2", "Maratonczyk2", 22));
+        school.AddStudent(new Student("Eda3", "Maratonczyk3", 22));
+        school.AddStudent(new Student("Eda4", "Maratonczyk4", 21));
+
+        System.out.println(school.toString());
+
+        try (FileOutputStream fos = new FileOutputStream("School.xml")) {
+            XMLEncoder encoder = new XMLEncoder(fos);
+            encoder.writeObject(school);
+            encoder.close();
+        }catch(Exception e){
+            System.out.println(e.toString());
+        }
+    }
 }
