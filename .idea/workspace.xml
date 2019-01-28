@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5abc1256-b181-482c-bc66-d9ce0c9730a3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JavaConcurencyPlusSerialization.iml" afterPath="$PROJECT_DIR$/JavaConcurencyPlusSerialization.iml" />
-      <change beforePath="$PROJECT_DIR$/School.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaConcurencyPlusSerialization/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/JavaConcurencyPlusSerialization/com/company/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaConcurencyPlusSerialization/com/company/Student.class" afterPath="$PROJECT_DIR$/out/production/JavaConcurencyPlusSerialization/com/company/Student.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Address.java" afterPath="$PROJECT_DIR$/src/com/company/Address.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/School.java" afterPath="$PROJECT_DIR$/src/com/company/School.java" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Student.java" afterPath="$PROJECT_DIR$/src/com/company/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,12 +57,12 @@
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="493">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -275,7 +268,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -285,7 +277,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25886145" sideWeight="0.3704691" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25886145" sideWeight="0.6295309" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25886145" sideWeight="0.6295309" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -383,8 +375,8 @@
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,12 +509,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="493">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
           </folding>
         </state>
       </provider>
